@@ -116,7 +116,7 @@ $(document).ready(() => {
             $.ajax({
                type: 'post',
                 url: 'mail.php',
-                data: 'name=' + name.val() + '&count' + count.val() + '&phone' + phone.val() + '&time' + time.val(),
+                data: 'name=' + name.val() + '&count=' + count.val() + '&phone=' + phone.val() + '&time=' + time.val(),
                 success: () => {
                     $('#reservation-sent').show();
                     $('#reservation-content').hide();
